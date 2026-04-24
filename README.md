@@ -1,14 +1,14 @@
 ## building an data lake on AWS for `Sparkify`.
-we have 2 types of `JSON files` resides in S3 the first one has data about the `song` and the `artist` and the second one has data about the `sessions` itself, we will use those 2 files to create a data lake whiche contains 5 tables 
+I have 2 types of `JSON files` resides in S3 the first one has data about the `song` and the `artist` and the second one has data about the `sessions` itself, I will use those 2 files to create a data lake whiche contains 5 tables 
 #### Project Repository files:
 - dl.cfg
 contains aws credentials.
 - etl.py 
-moving the data from `JSON` files to analytical `parquet` files in s3 
+designing efficient data model and moving the data from `JSON` files to analytical `parquet` files in s3 
 
 
 #### ETL Process
-we have 2 directory 
+I have 2 directory 
 - log_data it contains log files in JSON format describes the action happened in the sessions, in the page NextSong you can find some data about the song played by the user 
 - song_data it contains log files in JSON format have specific data about the song
 - performing read from them to create data frame to each analytical table then save it as parquet file 
