@@ -27,7 +27,7 @@ def create_spark_session():
 
 def process_song_data(spark, input_data, output_data):
     """
-    processinf song data to creat songs_table and artists_table
+    processing song data to creat songs_table and artists_table
     """
     # get filepath to song data file
     song_data =  input_data + "song_data/*/*/*/*.json"
